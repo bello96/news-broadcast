@@ -41,7 +41,7 @@ async function summarize(content,day) {
 }
 
 async function run() {
-  const day = dayjs('2025-05-01').format('YYYY-MM-DD');
+  const day = dayjs('2025-06-06').format('YYYY-MM-DD');
   const content = await fetchNewsContent(day);
   if (content) await summarize(content,day);
 }
